@@ -1,0 +1,673 @@
+/* === ESTILOS GENERALES === */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fefcf9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === HEADER === */
+header {
+  background: url('images/angel-light1.jpg') center bottom/cover no-repeat;
+  color: #5dade2;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+/* === NAVEGACIÓN === */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav a:hover {
+  color: #2980b9;
+  border-bottom: 2px solid #3498db;
+}
+
+
+/* === HERO / INICIO === */
+.hero {
+  background: center/cover no-repeat;
+  color: black;
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 2em;
+}
+
+/* === SECCIÓN: ARCÁNGELES === */
+#angeles {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #ffffffdd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* distribuye el contenido verticalmente */
+  min-height: 0px; /* ajusta según necesites */
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  color: #6c3483;
+}
+
+/* === SECCIONES DE TEXTO === */
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section h2 {
+  text-align: center;
+  color: #3b2f4b;
+  margin-bottom: 20px;
+}
+
+/* === SECCIÓN: TESTIMONIOS === */
+.testimonios {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #f9f6f2;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.testimonio {
+  background: #fff;
+  padding: 20px;
+  border-left: 4px solid #a77ae2;
+  border-radius: 4px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonio h4 {
+  margin-top: 10px;
+  color: #6c3483;
+}
+
+/* === CONTACTO === */
+#contacto ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+#contacto li {
+  margin: 10px 0;
+}
+
+#contacto a {
+  color: #7d4eaa;
+  text-decoration: none;
+}
+
+#contacto a:hover {
+  text-decoration: underline;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #e8dff7;
+  text-align: center;
+  padding: 20px;
+  color: #3b2f4b;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+/* === RESPONSIVIDAD === */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+}
+
+/* === COLORES POR ARCÁNGEL === */
+.card.miguel {
+  border-top: 5px solid #1e3dff; /* Azul */
+  background-color: #e8edff;
+}
+
+.card.rafael {
+  border-top: 5px solid #2ecc71; /* Verde */
+  background-color: #e7fbee;
+}
+
+.card.gabriel {
+  border-top: 5px solid #bdc3c7; /* Plateado */
+  background-color: #f4f4f4;
+}
+
+.card.uriel {
+  border-top: 5px solid #e67e22; /* Dorado / naranja */
+  background-color: #fff4e6;
+}
+
+.card.jofiel {
+  border-top: 5px solid #f1c40f; /* Amarillo */
+  background-color: #fffbe6;
+}
+
+.card.chamuel {
+  border-top: 5px solid #ff6b81; /* Rosa */
+  background-color: #ffe9ef;
+}
+
+.card.zadquiel {
+  border-top: 5px solid #8e44ad; /* Violeta */
+  background-color: #f3e8fb;
+}
+
+/* #contacto ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+#contacto li {
+  margin: 12px 0;
+  font-size: 1.1em;
+}
+
+#contacto i {
+  margin-right: 8px;
+  color: #7d4eaa;
+}
+
+#contacto a {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #a77ae2, #7d4eaa);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contacto a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(125, 78, 170, 0.4);
+}
+*/
+
+#contacto ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+#contacto li {
+  margin: 15px 0;
+}
+
+/* Botón completo (ícono + texto) */
+#contacto a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #a77ae2, #7d4eaa);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.05em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover sobre todo el bloque */
+#contacto a:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(125, 78, 170, 0.35);
+}
+
+/* Íconos dentro del botón */
+#contacto i {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  color: white;
+}
+
+/* Colores personalizados */
+#contacto i.fa-envelope {
+  background-color: #dd4b39;
+}
+
+#contacto i.fa-whatsapp {
+  background-color: #25D366;
+}
+
+#contacto i.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, 
+    #fdf497 0%, 
+    #fdf497 5%, 
+    #fd5949 45%, 
+    #d6249f 60%, 
+    #285AEB 90%);
+}
+
+
+#reiki-mascotas {
+  background-color: #fff9f2;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+#reiki-mascotas h2 {
+  color: #7d4eaa;
+  text-align: center;
+}
+
+#reiki-mascotas ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+#reiki-mascotas li {
+  margin: 8px 0;
+  font-size: 1.1em;
+}
+
+/* === ÍCONOS DE CONTACTO === */
+#contacto i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: white;
+  font-size: 18px;
+  margin-right: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Colores personalizados */
+#contacto i.fa-envelope {
+  background-color: #dd4b39; /* Gmail rojo */
+}
+
+#contacto i.fa-whatsapp {
+  background-color: #25D366; /* Verde WhatsApp */
+}
+
+#contacto i.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, 
+    #fdf497 0%, 
+    #fdf497 5%, 
+    #fd5949 45%, 
+    #d6249f 60%, 
+    #285AEB 90%);
+}
+
+/* Hover: efecto flotante */
+#contacto i:hover {
+  transform: scale(1.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* === BOTONES DE CONTACTO (ENLACES) === */
+#contacto a {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #a77ae2, #7d4eaa);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover: efecto flotante */
+#contacto a:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(125, 78, 170, 0.4);
+}
+
+/* === SUBMENÚ DE ÁNGELES === */
+nav ul li {
+  position: relative;
+}
+
+nav ul li ul.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  padding: 10px 0;
+  list-style: none;
+  margin: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  min-width: 180px;
+  z-index: 100;
+}
+
+nav ul li.submenu:hover ul.dropdown {
+  display: block;
+
+}
+
+nav ul li ul.dropdown li {
+  padding: 5px 20px;
+}
+
+nav ul li ul.dropdown li a {
+  color: #3b2f4b;
+  text-decoration: none;
+  display: block;
+  transition: background 0.3s ease;
+}
+
+nav ul li ul.dropdown li a:hover {
+  color: #7d4eaa;
+  background: #f3e8fb;
+}
+
+.angel-link {
+  text-decoration: none;
+  color: inherit; /* mantiene colores del texto */
+}
+
+.angel-link:hover .angel-card {
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+
+/* === PÁGINAS INDIVIDUALES DE ARCÁNGELES === */
+.angel-page {
+  width: 100%;              
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.angel-page img {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.angel-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+
+.angel-card h1,
+.angel-card h2 {
+  margin-top: 0;   /* elimina espacio arriba */
+  margin-bottom: 20px; /* mantiene un poco de espacio debajo */
+}
+
+
+.angel-card p {
+  margin-bottom: 15px;
+}
+
+.back-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-link a {
+  color: #7d4eaa;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.back-link a:hover {
+  color: #1e3dff;
+  text-decoration: underline;
+}
+
+/* === ESTILOS ESPECÍFICOS POR ARCÁNGEL === */
+
+/* Miguel */
+.angel-page.miguel img {
+  border-color: #1e3dff;
+}
+.angel-page.miguel .angel-card {
+  background: #e8edff;
+}
+.angel-page.miguel .angel-card h2 {
+  color: #1e3dff;
+}
+
+/* Rafael */
+.angel-page.rafael img {
+  border-color: #2ecc71;
+}
+.angel-page.rafael .angel-card {
+  background: #e7fbee;
+}
+.angel-page.rafael .angel-card h2 {
+  color: #2ecc71;
+}
+
+/* Gabriel */
+.angel-page.gabriel img {
+  border-color: #bdc3c7;
+}
+.angel-page.gabriel .angel-card {
+  background: #f4f4f4;
+}
+.angel-page.gabriel .angel-card h2 {
+  color: #7f8c8d;
+}
+
+/* Uriel */
+.angel-page.uriel img {
+  border-color: #e67e22;
+}
+.angel-page.uriel .angel-card {
+  background: #fff4e6;
+}
+.angel-page.uriel .angel-card h2 {
+  color: #e67e22;
+}
+
+/* Jofiel */
+.angel-page.jofiel img {
+  border-color: #f1c40f;
+}
+.angel-page.jofiel .angel-card {
+  background: #fffbe6;
+}
+.angel-page.jofiel .angel-card h2 {
+  color: #f1c40f;
+}
+
+/* Chamuel */
+.angel-page.chamuel img {
+  border-color: #ff6b81;
+}
+.angel-page.chamuel .angel-card {
+  background: #ffe9ef;
+}
+.angel-page.chamuel .angel-card h2 {
+  color: #ff6b81;
+}
+
+/* Zadquiel */
+.angel-page.zadquiel img {
+  border-color: #8e44ad;
+}
+.angel-page.zadquiel .angel-card {
+  background: #f3e8fb;
+}
+.angel-page.zadquiel .angel-card h2 {
+  color: #8e44ad;
+}
+
+
+/* === H1 EN HEADER ESPECÍFICO POR ARCÁNGEL === */
+.angel-page.miguel header h1 {
+  color: #1e3dff;
+}
+.angel-page.rafael header h1 {
+  color: #2ecc71;
+}
+.angel-page.gabriel header h1 {
+  color: #7f8c8d;
+}
+.angel-page.uriel header h1 {
+  color: #e67e22;
+}
+.angel-page.jofiel header h1 {
+  color: #f1c40f;
+}
+.angel-page.chamuel header h1 {
+  color: #ff6b81;
+}
+.angel-page.zadquiel header h1 {
+  color: #8e44ad;
+}
+
+/* === CARRETE DE FOTOS (REIKI MASCOTAS) === */
+.carousel {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+  width: 100%;
+}
+
+.carousel-track img {
+  width: 100%;
+  flex: 0 0 100%; /* Cada imagen ocupa todo el ancho */
+  object-fit: cover; /* Ajusta sin deformar */
+}
+
+#reiki p {
+  margin-bottom: 18px;  /* espacio entre párrafos */
+  line-height: 1.7;     /* interlineado cómodo */
+}
+
+/* === BOTONES DE MEDITACIONES === */
+.meditacion-card .btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #7d4eaa, #a77ae2);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meditacion-card .btn:hover {
+  background: linear-gradient(135deg, #6b3d9a, #925ec9);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(125, 78, 170, 0.4);
+}
+
+.meditaciones-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.meditacion-card {
+  background: #fff9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 280px;
+  text-align: center;
+}
